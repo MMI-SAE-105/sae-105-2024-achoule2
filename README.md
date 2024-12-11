@@ -3,11 +3,11 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM : CHOULET
+- PRÉNOM : ADRIEN
+- GROUPE : A2
+- URL du site : https://lustrous-sundae-8d1833.netlify.app
+- URL FIGMA : https://www.figma.com/design/AngcGKDRMMUPmPuxwoJxHZ/SAE-103-ADRIEN-CHOULET-(Copy)?node-id=1-3&t=4FY2icTtKyT5Guiy-1
 
 ## Sujet
 
