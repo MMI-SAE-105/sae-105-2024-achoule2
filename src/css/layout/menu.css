@@ -1,0 +1,100 @@
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #1E1E1E;
+  z-index: 1000;
+  display: none;
+}
+
+.menu-overlay.active {
+  display: block;
+}
+
+.menu-content {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-header {
+  text-align: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.menu-header h1 {
+  color: white;
+  font-size: 32px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.close-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-link {
+  background: rgba(82, 145, 196, 0.15);
+  border-radius: 30px;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.menu-link:hover {
+  background: rgba(82, 145, 196, 0.25);
+}
+
+.bottom-nav {
+  margin-top: auto;
+  background: rgba(30, 30, 30, 0.9);
+  border-radius: 25px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  gap: 5px;
+}
+
+.nav-item.active {
+  color: #5291C4;
+}
+
+.nav-item svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.nav-item span {
+  font-size: 12px;
+}

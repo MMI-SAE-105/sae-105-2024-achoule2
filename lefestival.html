@@ -3,100 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Festival - Ciné Echos</title>
+    <title>Ciné Echos</title>
+    <link rel="stylesheet" href="src/css/vendors/normalize.css">
     <link rel="stylesheet" href="src/css/base/main.css">
     <link rel="stylesheet" href="src/css/layout/header.css">
     <link rel="stylesheet" href="src/css/layout/footer.css">
     <link rel="stylesheet" href="src/css/layout/menu.css">
-    <link rel="stylesheet" href="src/css/vendors/normalize.css">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
+    <div class="menu-overlay">
+        <button class="close-menu" aria-label="Fermer le menu">×</button>
+        <div class="menu-content">
+            <h1>CINE<br>ECHOS</h1>
+            
+            <nav class="menu-nav">
+                <a href="index.html" class="menu-link">ACCUEIL</a>
+                <a href="lefestival.html" class="menu-link">LE FESTIVAL</a>
+                <a href="programmation.html" class="menu-link">PROGRAMMATION</a>
+                <a href="interstellar.html" class="menu-link">INTERSTELLAR</a>
+                <a href="upte.html" class="menu-link">UPTE</a>
+                <a href="plan.html" class="menu-link">PLAN</a>
+                <a href="chat.html" class="menu-link">CHATBOT</a>    
+            </nav>
+
+            <nav class="bottom-nav">
+                <a href="#" class="nav-item active">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69ZM12 3L2 12H5V20H11V14H13V20H19V12H22L12 3Z" fill="currentColor"/>
+                    </svg>
+                    <span>Accueil</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="currentColor"/>
+                    </svg>
+                    <span>Plan</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H6L4 18V4H20V16Z" fill="currentColor"/>
+                    </svg>
+                    <span>Chat</span>
+                </a>
+            </nav>
+        </div>
+    </div>
+    
     <header>
         <div class="logo">
-            <img src="./assets/icons/Component 1.png">       
+            <img src="./assets/icons/Component 1.png" alt="Logo Ciné Echos">    
         </div>
         <nav class="menu">
             <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
-
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="programmation.html">Programmation</a></li>
-                <li><a href="plan.html">Plan</a></li>
-                <li><a href="film.html">Film</a></li>
-            </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="festival-intro">
-            <h1>CINÉ <span>ECHOS</span></h1>
-            <div class="event-info">
-                <div class="highlight">
-                    <h2>2K25</h2>
-                    <p>05.06.07 Septembre</p>
-                </div>
-                <button class="btn-yellow">Inscris-toi pour accéder au tarif blind</button>
+    <main class="festival-main">
+        <div class="logo-center">
+            <h1>CINE<br>ECHOS</h1>
+        </div>
+    
+        <div class="festival-title">
+            <h2>2K25</h2>
+            <p>05.06.07 Septembre</p>
+        </div>
+    
+        <div class="ticket-cta">
+            <a href="#" class="ticket-button">Inscris toi pour accéder au tarif blind</a>
+        </div>
+    
+        <div class="festival-gallery">
+            <div class="gallery-item">
+                <img src="assets/img/Festi1.png" alt="Festival image 1" loading="lazy">
             </div>
-        </section>
-
-        <section class="gallery">
-            <img src="assets/img/Festi6.png" alt="Photo du festival 4">
-            <img src="assets/img/Festi1.png" alt="Photo du festival 1">
-            <img src="assets/img/Festi2.png" alt="Photo du festival 2">
-            <img src="assets/img/Festi3.png" alt="Photo du festival 3">
-            <img src="assets/img/Festi4.png" alt="Photo du festival 4">
-            <img src="assets/img/Festi5.png" alt="Photo du festival 4">
-        </section>
-
-        <section class="map">
-            <h2>Adresse</h2>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2636.103269411207!2d6.765101815992799!3d47.58532237918342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479243c1c6bc7b37%3A0x6a16cb9d501ab935!2s59%20Avenue%20L%C3%A9on%20Jouhaux%2C%2070400%20H%C3%A9ricourt!5e0!3m2!1sfr!2sfr!4v1618879647093!5m2!1sfr!2sfr"
-                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
-        </section>
+            <div class="gallery-item">
+                <img src="assets/img/Festi2.png" alt="Festival image 2" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/Festi3.png" alt="Festival image 3" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/Festi4.png" alt="Festival image 4" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/Festi5.png" alt="Festival image 5" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/Festi6.png" alt="Festival image 6" loading="lazy">
+            </div>
+        </div>
+    
+        <div class="location-map">
+            <iframe src="https://maps.google.com/maps?q=70400+Héricourt&output=embed" width="100%" height="200" frameborder="0" title="Carte de Héricourt" loading="lazy"></iframe>
+        </div>
 
         <nav class="bottom-nav">
-            <a href="index.html" class="active">Accueil</a>
-            <a href="plan.html">Plan</a>
-            <a href="contact.html">Contact</a>
+            <a href="#" class="nav-item active">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69ZM12 3L2 12H5V20H11V14H13V20H19V12H22L12 3Z" fill="currentColor"/>
+                </svg>
+                <span>Accueil</span>
+            </a>
+            <a href="#" class="nav-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="currentColor"/>
+                </svg>
+                <span>Plan</span>
+            </a>
+            <a href="#" class="nav-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H6L4 18V4H20V16Z" fill="currentColor"/>
+                </svg>
+                <span>Chat</span>
+            </a>
         </nav>
-
-
     </main>
-
-    <footer>
+    
+    <footer class="footer">
+        <div class="footer-logo">CINE ECHOS</div>
+        
         <div class="footer-content">
-            <div class="footer-menu">
-                <h3>Menu</h3>
+            <div class="footer-section">
+                <h3>MENU</h3>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="programmation.html">Programmation</a></li>
-                    <li><a href="plan.html">Plan</a></li>
-                    <li><a href="film.html">Film</a></li>
+                    <li><a href="#">ACCUEIL</a></li>
+                    <li><a href="#">PROGRAMMATION</a></li>
+                    <li><a href="#">PLAN</a></li>
+                    <li><a href="#">FILM</a></li>
                 </ul>
             </div>
-            <div class="contact">
-                <h3>Contact</h3>
+
+            <div class="footer-section">
+                <h3>CONTACT</h3>
                 <p>cineechos@gmail.com</p>
                 <p>06 25 48 69 54</p>
                 <p>05/09/2025 - 07/09/2025</p>
                 <p>Héricourt, CHATEAU</p>
             </div>
-            <div class="socials">
-                <h3>Nous suivre</h3>
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">YouTube</a></li>
-                </ul>
+
+            <div class="footer-section">
+                <h3>NOUS SUIVRE</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon facebook" aria-label="Facebook"></a>
+                    <a href="#" class="social-icon instagram" aria-label="Instagram"></a>
+                    <a href="#" class="social-icon twitter" aria-label="Twitter"></a>
+                    <a href="#" class="social-icon youtube" aria-label="YouTube"></a>
+                </div>
             </div>
-            <p class="credits">© 2025 Ciné Echos | IUT Montbéliard</p>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-logo-small">CINE ECHOS</div>
+            <div class="footer-logo-m">M</div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="src/script.js"></script>
 </body>
 </html>

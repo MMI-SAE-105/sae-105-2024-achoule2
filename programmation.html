@@ -1,104 +1,198 @@
-<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ciné Echos</title>
-  <link rel="stylesheet" href="src/css/vendors/normalize.css">
-  <link rel="stylesheet" href="src/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciné Echos</title>
+    <link rel="stylesheet" href="src/css/base/main.css">
+    <link rel="stylesheet" href="src/css/layout/header.css">
+    <link rel="stylesheet" href="src/css/layout/footer.css">
+    <link rel="stylesheet" href="src/css/layout/menu.css">
+    <link rel="stylesheet" href="src/css/vendors/normalize.css">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-  
-  <header class="header">
-    <div class="logo">
-      <img src="./assets/icons/Component 1.png">  
-      <nav class="menu">
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="programmation.html">Programmation</a></li>
-          <li><a href="plan.html">Plan</a></li>
-          <li><a href="film.html">Film</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <div class="menu-overlay">
+        <button class="close-menu">×</button>
+        <div class="menu-content">
+            <h1>CINE<br>ECHOS</h1>
+            
+            <nav class="menu-nav">
+                <a href="index.html" class="menu-link">ACCUEIL</a>
+                <a href="lefestival.html" class="menu-link">LE FESTIVAL</a>
+                <a href="programmation.html" class="menu-link">PROGRAMMATION</a>
+                <a href="interstellar.html" class="menu-link">INTERSTELLAR</a>
+                <a href="upte.html" class="menu-link">UPTE</a>
+                <a href="plan.html" class="menu-link">PLAN</a>
+                <a href="chat.html" class="menu-link">CHATBOT</a>    
+            </nav>
 
-  
-  <main class="main-content">
+            <nav class="bottom-nav">
+                <a href="#" class="nav-item active">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69ZM12 3L2 12H5V20H11V14H13V20H19V12H22L12 3Z" fill="currentColor"/>
+                    </svg>
+                    <span>Accueil</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="currentColor"/>
+                    </svg>
+                    <span>Plan</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H6L4 18V4H20V16Z" fill="currentColor"/>
+                    </svg>
+                    <span>Chat</span>
+                </a>
+            </nav>
     
-    <section class="programmation">
-      <h2>Programmation</h2>
-      <div class="date-container">
-        <h3>2K25</h3>
-        <p>05.06.07 Septembre</p>
-      </div>
-
-      
-      <div class="films-list">
-        
-        <div class="jour">
-          <h4>05 Septembre</h4>
-          <ul>
-            <li>Blade Runner - 19h00 à 20h00</li>
-            <li>Inception - 20h00 à 22h00</li>
-            <li>A Space Odyssey - 22h00 à 00h00</li>
-            <li>The Matrix - 00h00 à 03h00</li>
-          </ul>
+           
         </div>
-
-        
-        <div class="jour">
-          <h4>06 Septembre</h4>
-          <ul>
-            <li>Le Dîner de Cons - 20h00 à 22h00</li>
-            <li>The Big Lebowski - 22h00 à 00h00</li>
-            <li>Astérix & Obélix - 00h00 à 03h00</li>
-          </ul>
-        </div>
-
-        
-        <div class="jour">
-          <h4>07 Septembre</h4>
-          <ul>
-            <li>Sacré Graal! - 19h00 à 20h00</li>
-            <li>Le Dîner de Cons - 20h00 à 22h00</li>
-            <li>The Big Lebowski - 22h00 à 00h00</li>
-            <li>Astérix & Obélix - 00h00 à 03h00</li>
-          </ul>
-        </div>
-      </div>
-
-      
-      <div class="memo">
-        <p>Pensez à jeter vos déchets dans les poubelles adéquates.</p>
-      </div>
-
-    </section>
-  </main>
-
-  
-  <footer class="footer">
-    <div class="container">
-      <p>Contact : cineechos@gmail.com | Tel : 06.25.48.65.54</p>
-      <p>Dates : du 05/09/2025 au 07/09/2025 | Lieu : Héricourt, Château</p>
-
-      
-      <div class="social-media">
-        Suivez-nous :
-        <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
-        <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
-        <a href="#"><img src="assets/icons/twitter.svg" alt="Twitter"></a>
-        <a href="#"><img src="assets/icons/youtube.svg" alt="YouTube"></a>
-      </div>
-
-      
-      <div class="partner-logo">
-        <img src="assets/img/partenaire.png" alt="Logo partenaire">
-      </div>
     </div>
-  </footer>
+    
+<header>
+    <div class="logo">
+        <img src="./assets/icons/Component 1.png">    
+    </div>
+    <nav class="menu">
+        <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+    </nav>
+</header>
 
-<script src="./js/script.js"></script>
+<main class="programming-main">
+    <div class="logo-center">
+        <h1>CINE<br>ECHOS</h1>
+    </div>
 
+    <div class="event-title">
+        <div class="tag">Programmation</div>
+        <h2>2K25</h2>
+        <p>05.06.07 Septembre</p>
+    </div>
+
+    <div class="schedule-list">
+        <div class="day-schedule">
+            <div class="date-tag">05</div>
+            <div class="movie-item">
+                <span class="movie-title">Blade Runner</span>
+                <span class="movie-time">19h00 - 20h00</span>
+            </div>
+            <div class="movie-item">
+                <span class="movie-title">Inception</span>
+                <span class="movie-time">20h00 - 22h00</span>
+            </div>
+            <div class="movie-item">
+                <span class="movie-title">A space odyssey</span>
+                <span class="movie-time">22h00 - 00h00</span>
+            </div>
+            <div class="movie-item">
+                <span class="movie-title">The matrix</span>
+                <span class="movie-time">00h00 - 03h00</span>
+            </div>
+        </div>
+
+        <div class="day-schedule">
+            <div class="date-tag">06</div>
+            <div class="movie-item">
+                <span class="movie-title">Sacré graal !</span>
+                <span class="movie-time">19h00 - 20h00</span>
+            </div>
+            <div class="movie-item">
+                <span class="movie-title">Le dîner de cons</span>
+                <span class="movie-time">20h00 - 22h00</span>
+            </div>
+            <div class="movie-item">
+                <span class="movie-title">The big lebowski</span>
+                <span class="movie-time">22h00 - 00h00</span>
+            </div>
+            <div class="movie-item">
+                <span class="movie-title">Astérix & Obélix</span>
+                <span class="movie-time">00h00 - 03h00</span>
+            </div>
+        </div>
+
+        <div class="day-schedule">
+            <div class="date-tag">07</div>
+            <div class="movie-item">
+                <span class="movie-title">Sacré graal !</span>
+                <span class="movie-time">19h00 - 20h00</span>
+            </div>
+            <div class="movie-item">
+                <span class="movie-title">Le dîner de cons</span>
+                <span class="movie-time">20h00 - 22h00</span>
+            </div>
+            <div class="movie-item">
+                <span class="movie-title">The big lebowski</span>
+                <span class="movie-time">22h00 - 00h00</span>
+            </div>
+            <div class="movie-item">
+                <span class="movie-title">Astérix & Obélix</span>
+                <span class="movie-time">00h00 - 03h00</span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="bottom-nav">
+      <a href="#" class="nav-item active">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69ZM12 3L2 12H5V20H11V14H13V20H19V12H22L12 3Z" fill="currentColor"/>
+          </svg>
+          <span>Accueil</span>
+      </a>
+      <a href="#" class="nav-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="currentColor"/>
+          </svg>
+          <span>Plan</span>
+      </a>
+      <a href="#" class="nav-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H6L4 18V4H20V16Z" fill="currentColor"/>
+          </svg>
+          <span>Chat</span>
+      </a>
+  </nav>
+</main>
+<footer class="footer">
+    <div class="footer-logo">CINE ECHOS</div>
+    
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>MENU</h3>
+            <ul>
+                <li><a href="#">ACCUEIL</a></li>
+                <li><a href="#">PROGRAMMATION</a></li>
+                <li><a href="#">PLAN</a></li>
+                <li><a href="#">FILM</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>CONTACT</h3>
+            <p>cineechos@gmail.com</p>
+            <p>06 25 48 69 54</p>
+            <p>05/09/2025 - 07/09/2025</p>
+            <p>Héricourt, CHATEAU</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>NOUS SUIVRE</h3>
+            <div class="social-icons">
+                <a href="#" class="social-icon facebook"></a>
+                <a href="#" class="social-icon instagram"></a>
+                <a href="#" class="social-icon twitter"></a>
+                <a href="#" class="social-icon youtube"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-logo-small">CINE ECHOS</div>
+        <div class="footer-logo-m">M</div>
+    </div>
+</footer>
+
+    <script src="src/script.js"></script>
 </body>
 </html>
