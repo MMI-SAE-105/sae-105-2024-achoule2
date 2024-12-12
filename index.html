@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -11,48 +12,81 @@
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-<header>
-    <div class="logo">
-        <img src="./assets/icons/Component 1.png">    
+    <div class="menu-overlay">
+        <button class="close-menu" aria-label="Fermer le menu">×</button>
+        <div class="menu-content">
+            <h1>CINE<br>ECHOS</h1>
+            <nav class="menu-nav">
+                <a href="index.html" class="menu-link">ACCUEIL</a>
+                <a href="lefestival.html" class="menu-link">LE FESTIVAL</a>
+                <a href="programmation.html" class="menu-link">PROGRAMMATION</a>
+                <a href="interstellar.html" class="menu-link">INTERSTELLAR</a>
+                <a href="upte.html" class="menu-link">UPTE</a>
+                <a href="plan.html" class="menu-link">PLAN</a>
+                <a href="chat.html" class="menu-link">CHATBOT</a>
+            </nav>
+            <nav class="bottom-nav">
+                <a href="#" class="nav-item active">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69ZM12 3L2 12H5V20H11V14H13V20H19V12H22L12 3Z" fill="currentColor"/>
+                    </svg>
+                    <span>Accueil</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="currentColor"/>
+                    </svg>
+                    <span>Plan</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H6L4 18V4H20V16Z" fill="currentColor"/>
+                    </svg>
+                    <span>Chat</span>
+                </a>
+            </nav>
+        </div>
     </div>
-    <nav class="menu">
-        <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
-    </nav>
-</header>
 
+    <header>
+        <div class="logo">
+            <img src="./assets/icons/Component 1.png" alt="Logo Ciné Echos">
+        </div>
+        <nav class="menu">
+            <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+        </nav>
+    </header>
 
-<main class="main-content">
+    <main class="main-content">
         <div class="logo-center">
             <h1>CINE<br>ECHOS</h1>
         </div>
-    
+
         <div class="time-info">
             <div class="time-content">
                 <span class="current-time">17:45</span>
                 <span class="event-info">Ouverture de la Fictionstage (5 minutes)</span>
             </div>
         </div>
-        
-        <div class="stages">
+
+        <section class="stages">
             <div class="stage fictionstage">
                 <div class="stage-tag">Fictionstage</div>
                 <h2>Interstellar</h2>
                 <div class="stage-time">18h00 — 20h30</div>
             </div>
-    
             <div class="stage comicstage">
                 <div class="stage-tag">Comicstage</div>
                 <h2>Un petit truc en +</h2>
                 <div class="stage-time">Ouverture à 03h15</div>
             </div>
-        </div>
-    
-        <div class="programming">
+        </section>
+
+        <section class="programming">
             <div class="programming-header">
                 <h2>Programmation</h2>
-                <button class="add-button">+</button>
+                <button class="add-button" aria-label="Ajouter à la programmation">+</button>
             </div>
-            
             <div class="schedule">
                 <h3>Vendredi 5 septembre</h3>
                 <div class="schedule-item">
@@ -71,7 +105,6 @@
                     <span>The matrix</span>
                     <span>00h00 — 03h00</span>
                 </div>
-    
                 <h3>Samedi 6 septembre</h3>
                 <div class="schedule-item">
                     <span>Scott pilgrim</span>
@@ -90,9 +123,9 @@
                     <span>00h00 — 03h00</span>
                 </div>
             </div>
-        </div>
-    
-        <div class="weather">
+        </section>
+
+        <section class="weather">
             <h2>Héricourt</h2>
             <div class="weather-info">
                 <div class="temperature">27°C</div>
@@ -134,9 +167,8 @@
                     <span class="temp">25°C</span>
                 </div>
             </div>
-        </div>
-        
-    
+        </section>
+
         <div class="memo">
             <div class="memo-content">
                 <div class="memo-icon">
@@ -144,11 +176,10 @@
                         <path d="M9 3V4H4V6H5V19C5 19.5304 5.21071 20.0391 5.58579 20.4142C5.96086 20.7893 6.46957 21 7 21H17C17.5304 21 18.0391 20.7893 18.4142 20.4142C18.7893 20.0391 19 19.5304 19 19V6H20V4H15V3H9Z" fill="currentColor"/>
                     </svg>
                 </div>
-                <p>Pensez à jetter vos déchets dans les poubelles adéquates</p>
+                <p>Pensez à jeter vos déchets dans les poubelles adéquates</p>
             </div>
         </div>
-        
-    
+
         <nav class="bottom-nav">
             <a href="#" class="nav-item active">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -169,40 +200,43 @@
                 <span>Chat</span>
             </a>
         </nav>
-        
-</main>
+    </main>
 
-<footer>
-    <div class="logo">CINE ECHOS</div>
-    <nav>
-      <h3>MENU</h3>
-      <ul>
-        <li><a href="#">ACCUEIL</a></li>
-        <li><a href="#">PROGRAMMATION</a></li>
-        <li><a href="#">PLAN</a></li>
-        <li><a href="#">FILM</a></li>
-      </ul>
-    </nav>
-    <div class="contact">
-      <h3>CONTACT</h3>
-      <p>cineechos@gmail.com</p>
-      <p>06 25 48 69 54</p>
-      <p>05/09/2025 - 07/09/2025</p>
-      <p>Héricourt, CHATEAU</p>
-    </div>
-    <div class="social">
-      <h3>NOUS SUIVRE</h3>
-      <div class="social-icons">
-        <img src="./assets/icons/socialIcons.png"> 
-      </div>
-    </div>
-    <div class="logos">
-      <div class="cine-echos-logo">CINE ECHOS</div>
-      <div class="m-logo">M</div>
-    </div>
-  </footer>
-  
+    <footer class="footer">
+        <div class="footer-logo">CINE ECHOS</div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MENU</h3>
+                <ul>
+                    <li><a href="#">ACCUEIL</a></li>
+                    <li><a href="#">PROGRAMMATION</a></li>
+                    <li><a href="#">PLAN</a></li>
+                    <li><a href="#">FILM</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>CONTACT</h3>
+                <p>cineechos@gmail.com</p>
+                <p>06 25 48 69 54</p>
+                <p>05/09/2025 - 07/09/2025</p>
+                <p>Héricourt, CHATEAU</p>
+            </div>
+            <div class="footer-section">
+                <h3>NOUS SUIVRE</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon facebook" aria-label="Facebook"></a>
+                    <a href="#" class="social-icon instagram" aria-label="Instagram"></a>
+                    <a href="#" class="social-icon twitter" aria-label="Twitter"></a>
+                    <a href="#" class="social-icon youtube" aria-label="YouTube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-logo-small">CINE ECHOS</div>
+            <div class="footer-logo-m">M</div>
+        </div>
+    </footer>
 
-    <script src="js/script.js"></script>
+    <script src="src/script.js"></script>
 </body>
 </html>
