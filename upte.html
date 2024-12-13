@@ -1,18 +1,19 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ciné Echos</title>
+    <link rel="stylesheet" href="src/css/vendors/normalize.css">
     <link rel="stylesheet" href="src/css/base/main.css">
     <link rel="stylesheet" href="src/css/layout/header.css">
     <link rel="stylesheet" href="src/css/layout/footer.css">
     <link rel="stylesheet" href="src/css/layout/menu.css">
-    <link rel="stylesheet" href="src/css/vendors/normalize.css">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
     <div class="menu-overlay">
-        <button class="close-menu">×</button>
+        <button class="close-menu" aria-label="Fermer le menu">×</button>
         <div class="menu-content">
             <h1>CINE<br>ECHOS</h1>
             
@@ -28,159 +29,163 @@
 
             <nav class="bottom-nav">
                 <a href="#" class="nav-item active">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                         <path d="M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69ZM12 3L2 12H5V20H11V14H13V20H19V12H22L12 3Z" fill="currentColor"/>
                     </svg>
                     <span>Accueil</span>
                 </a>
                 <a href="#" class="nav-item">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                         <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="currentColor"/>
                     </svg>
                     <span>Plan</span>
                 </a>
                 <a href="#" class="nav-item">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                         <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H6L4 18V4H20V16Z" fill="currentColor"/>
                     </svg>
                     <span>Chat</span>
                 </a>
             </nav>
-    
-           
         </div>
     </div>
     
-<header>
-    <div class="logo">
-        <img src="./assets/icons/Component 1.png">    
-    </div>
-    <nav class="menu">
-        <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
-    </nav>
-</header>
+    <header>
+        <div class="logo">
+            <img src="./assets/icons/Component 1.png" alt="Logo Ciné Echos">    
+        </div>
+        <nav class="menu">
+            <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+        </nav>
+    </header>
 
-<main class="movie-main">
-  <div class="logo-center">
-      <h1>CINE<br>ECHOS</h1>
-  </div>
-
-  <div class="movie-card">
-      <div class="stage-tag comicstage">Comicstage</div>
-      <h2>Un petit truc en +</h2>
-      <div class="movie-time">Ouverture à 03h15</div>
-  </div>
-
-  <div class="movie-details">
-      <div class="details-header">
-          <h3>LE FILM</h3>
-          <button class="expand-button">+</button>
-      </div>
-      <p class="movie-description">
-          Un p'tit truc en plus raconte l'histoire de Paulo et son père, surnommé "La Fraise", qui vivent de petits larcins. Après un braquage raté, ils se réfugient dans une colonie de vacances pour jeunes adultes en situation de handicap, se faisant passer pour un pensionnaire et son éducateur. Ce qui commence comme une simple cachette devient une expérience humaine transformative, les confrontant à des situations inattendues et touchantes.
-      </p>
-  </div>
-
-  <div class="weather">
-      <h3>Héricourt</h3>
-      <div class="weather-main">
-          <div class="temperature">27°C</div>
-          <div class="weather-condition">nuageux</div>
-      </div>
-      <div class="weather-stats">
-          <span>9.7m/s</span>
-          <span>12%</span>
-          <span>767 mmHg</span>
-      </div>
-      <div class="weather-forecast">
-          <div class="forecast-item">
-              <span class="time">15:00</span>
-              <span class="temp">29°C</span>
-          </div>
-          <div class="forecast-item">
-              <span class="time">16:00</span>
-              <span class="temp">29°C</span>
-          </div>
-          <div class="forecast-item">
-              <span class="time">17:00</span>
-              <span class="temp">27°C</span>
-          </div>
-          <div class="forecast-item">
-              <span class="time">18:00</span>
-              <span class="temp">26°C</span>
-          </div>
-          <div class="forecast-item">
-              <span class="time">19:00</span>
-              <span class="temp">25°C</span>
-          </div>
-      </div>
-  </div>
-
-  <div class="memo">
-      <div class="memo-content">
-          <img src="assets/icons/trash-icon.svg" alt="trash">
-          <p>Pensez à jetter vos déchets dans les poubelles adéquates</p>
-      </div>
-  </div>
-  <nav class="bottom-nav">
-    <a href="#" class="nav-item active">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69ZM12 3L2 12H5V20H11V14H13V20H19V12H22L12 3Z" fill="currentColor"/>
-        </svg>
-        <span>Accueil</span>
-    </a>
-    <a href="#" class="nav-item">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="currentColor"/>
-        </svg>
-        <span>Plan</span>
-    </a>
-    <a href="#" class="nav-item">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H6L4 18V4H20V16Z" fill="currentColor"/>
-        </svg>
-        <span>Chat</span>
-    </a>
-</nav>
-</main>
-<footer class="footer">
-    <div class="footer-logo">CINE ECHOS</div>
-    
-    <div class="footer-content">
-        <div class="footer-section">
-            <h3>MENU</h3>
-            <ul>
-                <li><a href="#">ACCUEIL</a></li>
-                <li><a href="#">PROGRAMMATION</a></li>
-                <li><a href="#">PLAN</a></li>
-                <li><a href="#">FILM</a></li>
-            </ul>
+    <main class="movie-main">
+        <div class="logo-center">
+            <h1>CINE<br>ECHOS</h1>
         </div>
 
-        <div class="footer-section">
-            <h3>CONTACT</h3>
-            <p>cineechos@gmail.com</p>
-            <p>06 25 48 69 54</p>
-            <p>05/09/2025 - 07/09/2025</p>
-            <p>Héricourt, CHATEAU</p>
+        <div class="movie-card">
+            <div class="stage-tag comicstage">Comicstage</div>
+            <h2>Un petit truc en +</h2>
+            <div class="movie-time">Ouverture à 03h15</div>
         </div>
 
-        <div class="footer-section">
-            <h3>NOUS SUIVRE</h3>
-            <div class="social-icons">
-                <a href="#" class="social-icon facebook"></a>
-                <a href="#" class="social-icon instagram"></a>
-                <a href="#" class="social-icon twitter"></a>
-                <a href="#" class="social-icon youtube"></a>
+        <div class="movie-details">
+            <div class="details-header">
+                <h3>LE FILM</h3>
+                <button class="expand-button" aria-label="Développer les détails du film">+</button>
+            </div>
+            <p class="movie-description">
+                Un p'tit truc en plus raconte l'histoire de Paulo et son père, surnommé "La Fraise", qui vivent de petits larcins. Après un braquage raté, ils se réfugient dans une colonie de vacances pour jeunes adultes en situation de handicap, se faisant passer pour un pensionnaire et son éducateur. Ce qui commence comme une simple cachette devient une expérience humaine transformative, les confrontant à des situations inattendues et touchantes.
+            </p>
+        </div>
+
+        <div class="weather">
+            <h3>Héricourt</h3>
+            <div class="weather-main">
+                <div class="temperature">27°C</div>
+                <div class="weather-condition">nuageux</div>
+            </div>
+            <div class="weather-stats">
+                <span>9.7m/s</span>
+                <span>12%</span>
+                <span>767 mmHg</span>
+            </div>
+            <div class="weather-forecast">
+                <div class="forecast-item">
+                    <span class="time">15:00</span>
+                    <span class="temp">29°C</span>
+                </div>
+                <div class="forecast-item">
+                    <span class="time">16:00</span>
+                    <span class="temp">29°C</span>
+                </div>
+                <div class="forecast-item">
+                    <span class="time">17:00</span>
+                    <span class="temp">27°C</span>
+                </div>
+                <div class="forecast-item">
+                    <span class="time">18:00</span>
+                    <span class="temp">26°C</span>
+                </div>
+                <div class="forecast-item">
+                    <span class="time">19:00</span>
+                    <span class="temp">25°C</span>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="footer-bottom">
-        <div class="footer-logo-small">CINE ECHOS</div>
-        <div class="footer-logo-m">M</div>
-    </div>
-</footer>
+        <div class="memo">
+            <div class="memo-content">
+                <div class="memo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 3V4H4V6H5V19C5 19.5304 5.21071 20.0391 5.58579 20.4142C5.96086 20.7893 6.46957 21 7 21H17C17.5304 21 18.0391 20.7893 18.4142 20.4142C18.7893 20.0391 19 19.5304 19 19V6H20V4H15V3H9Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <p>Pensez à jeter vos déchets dans les poubelles adéquates</p>
+            </div>
+        </div>
+
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item active">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69ZM12 3L2 12H5V20H11V14H13V20H19V12H22L12 3Z" fill="currentColor"/>
+                </svg>
+                <span>Accueil</span>
+            </a>
+            <a href="#" class="nav-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="currentColor"/>
+                </svg>
+                <span>Plan</span>
+            </a>
+            <a href="#" class="nav-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H6L4 18V4H20V16Z" fill="currentColor"/>
+                </svg>
+                <span>Chat</span>
+            </a>
+        </nav>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-logo">CINE ECHOS</div>
+        
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MENU</h3>
+                <ul>
+                    <li><a href="#">ACCUEIL</a></li>
+                    <li><a href="#">PROGRAMMATION</a></li>
+                    <li><a href="#">PLAN</a></li>
+                    <li><a href="#">FILM</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>CONTACT</h3>
+                <p>cineechos@gmail.com</p>
+                <p>06 25 48 69 54</p>
+                <p>05/09/2025 - 07/09/2025</p>
+                <p>Héricourt, CHATEAU</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>NOUS SUIVRE</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon facebook" aria-label="Facebook"></a>
+                    <a href="#" class="social-icon instagram" aria-label="Instagram"></a>
+                    <a href="#" class="social-icon twitter" aria-label="Twitter"></a>
+                    <a href="#" class="social-icon youtube" aria-label="YouTube"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-logo-small">CINE ECHOS</div>
+            <div class="footer-logo-m">M</div>
+        </div>
+    </footer>
     <script src="src/script.js"></script>
 </body>
 </html>
