@@ -15,9 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const forecastItems = document.querySelectorAll('.forecast-item');
   
@@ -31,6 +28,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    const scheduleItems = document.querySelectorAll('.schedule-item');
+  
+    scheduleItems.forEach(item => {
+      item.addEventListener('mouseenter', () => {
+        item.style.transform = 'translateY(-5px)';
+        item.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
+      });
+  
+      item.addEventListener('mouseleave', () => {
+        item.style.transform = 'translateY(0)';
+        item.style.boxShadow = 'none';
+      });
+    });
+  });
+  
 
 
   
